@@ -9,6 +9,12 @@
 
 $blaci: 222222;
 */
+// * {
+//     /* margin: 0;
+//     padding: 0; */
+//     box-sizing: border-box;
+// }
+
 body {
     margin: 0;
     background-color: darkgray;
@@ -17,13 +23,22 @@ body {
 header {
     padding: 40px 50px;
 }
-
 .center {
-    padding: 0 calc(50% - 570px);
+    padding: 0 calc(50% - 1140px / 2);
 }
 
 .main {
     background-color: aqua;
     min-height: 300px;
     outline: black 1px solid;
-} /*# sourceMappingURL=style.css.map */
+}
+// .test {
+//     box-shadow: 0 0 0 100vmax #121212;
+//     clip-path: inset(0-100vmax);
+//     padding: 40px;
+// }
+
+// .full-bleed {
+//     background-color: #121212;
+//     color: #efefef;
+// }
