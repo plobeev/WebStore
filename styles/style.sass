@@ -1,0 +1,83 @@
+$white: #fff
+$pink: #F16D7F
+$black: #000000
+$grey: #5D5D5D
+$grey_light: #6F6E6E
+$grey_light_extra: #C4C4C4
+$grey_header_icons: #e8e8e8
+$arrowGrey: #2A2A2A
+$grey_dark: #222222
+$promoBackground: #F1E4E6
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    margin: 0
+    background-color: $white
+header
+    background-color: $grey_dark
+    padding: 40px 50px
+    color: $white
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.center
+    padding: 0 calc(50% - 1140px / 2)
+
+.main
+    min-height: 300px
+    outline: black 1px solid
+
+.header_icon
+    fill: $grey_header_icons
+.promo
+    background-color: $promoBackground
+    &-content
+        background: url(../img/promoBgPreview.png)
+        min-height: 764px
+        background-repeat: no-repeat
+        background-position-x: left
+        display: flex
+        align-items: center
+        justify-content: center
+        &-text
+            height: 92px
+            text-transform: uppercase
+            display: flex
+            flex-direction: column
+            justify-content: center
+            border-left: 12px $pink solid
+            padding: 0 0 0 16px
+            margin: 0 0 0 64px
+
+.offers
+    padding-top: 65px
+    padding-bottom: 96px
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-auto-rows: 260px
+    gap: 30px
+
+    &-for-women
+        background: url(../img/offer_for_women.jpg)
+
+    &-for-men
+        background: url(../img/offer_for_men.jpg)
+    &-for-kids
+        background: url(../img/offer_for_kids.jpg)
+    &-accesories
+        background: url(../img/offer_accesories.jpg)
+        grid-column: 1 / 4
+        grid-row: 2
+        height: 180px
+    &-item
+        display: flex
+        flex-direction: column
+        text-align: center
+        text-transform: uppercase
+        justify-content: center
+        background-position: center
