@@ -8,6 +8,7 @@ $grey_header_icons: #e8e8e8
 $arrowGrey: #2A2A2A
 $grey_dark: #222222
 $promoBackground: #F1E4E6
+$grey_lightest: #F8F8F8
 
 *
     margin: 0
@@ -55,25 +56,13 @@ header
             margin: 0 0 0 64px
 
 .offers
+    outline: red 1px solid
     padding-top: 65px
     padding-bottom: 96px
     display: grid
     grid-template-columns: repeat(3, 1fr)
     grid-auto-rows: 260px
     gap: 30px
-
-    &-for-women
-        background: url(../img/offer_for_women.jpg)
-
-    &-for-men
-        background: url(../img/offer_for_men.jpg)
-    &-for-kids
-        background: url(../img/offer_for_kids.jpg)
-    &-accesories
-        background: url(../img/offer_accesories.jpg)
-        grid-column: 1 / 4
-        grid-row: 2
-        height: 180px
     &-item
         display: flex
         flex-direction: column
@@ -81,3 +70,39 @@ header
         text-transform: uppercase
         justify-content: center
         background-position: center
+        &-for-women
+            background: url(../img/offer_for_women.jpg)
+        &-for-men
+            background: url(../img/offer_for_men.jpg)
+        &-for-kids
+            background: url(../img/offer_for_kids.jpg)
+        &-accesories
+            background: url(../img/offer_accesories.jpg)
+            grid-column: 1 / 4
+            grid-row: 2
+            height: 180px
+.products
+    margin-bottom: 95px
+    outline: 1px olive solid
+    &-items
+        justify-content: center
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(360px, auto))
+        gap: 30px
+        &-card
+            display: flex
+            flex-direction: column
+            max-height: 582px
+            &-image
+                width: 360px
+                height: 420px
+            &-details
+                padding: 26px 29px 20px 17px
+                display: flex
+                flex-direction: column
+                height: 162px
+                justify-content: space-between
+                background-color: $grey_lightest
+                &-name
+                    margin-bottom: 12px
+                &-price

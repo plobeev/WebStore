@@ -55,27 +55,13 @@ header {
 }
 
 .offers {
+  outline: red 1px solid;
   padding-top: 65px;
   padding-bottom: 96px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 260px;
   gap: 30px;
-}
-.offers-for-women {
-  background: url(../img/offer_for_women.jpg);
-}
-.offers-for-men {
-  background: url(../img/offer_for_men.jpg);
-}
-.offers-for-kids {
-  background: url(../img/offer_for_kids.jpg);
-}
-.offers-accesories {
-  background: url(../img/offer_accesories.jpg);
-  grid-column: 1/4;
-  grid-row: 2;
-  height: 180px;
 }
 .offers-item {
   display: flex;
@@ -84,4 +70,50 @@ header {
   text-transform: uppercase;
   justify-content: center;
   background-position: center;
+}
+.offers-item-for-women {
+  background: url(../img/offer_for_women.jpg);
+}
+.offers-item-for-men {
+  background: url(../img/offer_for_men.jpg);
+}
+.offers-item-for-kids {
+  background: url(../img/offer_for_kids.jpg);
+}
+.offers-item-accesories {
+  background: url(../img/offer_accesories.jpg);
+  grid-column: 1/4;
+  grid-row: 2;
+  height: 180px;
+}
+
+.products {
+  margin-bottom: 95px;
+  outline: 1px olive solid;
+}
+.products-items {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+  gap: 30px;
+}
+.products-items-card {
+  display: flex;
+  flex-direction: column;
+  max-height: 582px;
+}
+.products-items-card-image {
+  width: 360px;
+  height: 420px;
+}
+.products-items-card-details {
+  padding: 26px 29px 20px 17px;
+  display: flex;
+  flex-direction: column;
+  height: 162px;
+  justify-content: space-between;
+  background-color: #F8F8F8;
+}
+.products-items-card-details-name {
+  margin-bottom: 12px;
 }/*# sourceMappingURL=style.css.map */
