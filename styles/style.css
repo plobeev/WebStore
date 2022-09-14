@@ -7,15 +7,26 @@
 body {
   margin: 0;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header {
+main {
+  flex-grow: 1;
+}
+
+.navbar {
   background-color: #222222;
   padding: 40px 50px;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.border {
+  border: pink 2px solid;
 }
 
 .center {
@@ -27,7 +38,7 @@ header {
   outline: black 1px solid;
 }
 
-.header_icon {
+.navbar_icon {
   fill: #e8e8e8;
 }
 
@@ -116,4 +127,31 @@ header {
 }
 .products-items-card-details-name {
   margin-bottom: 12px;
+}
+
+.footer {
+  background-color: #222222;
+}
+
+.registration-info-perks-list {
+  list-style-type: none;
+}
+
+.registration-info-perks-list-item::before {
+  content: url('data:image/svg+xml;utf8,<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/></svg>');
+}
+
+.submit-button {
+  height: 50px;
+  width: 167px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="17" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M422.6 278.6L445.3 256l-22.6-22.6-144-144L256 66.7 210.8 112l22.6 22.6L322.8 224 32 224 0 224l0 64 32 0 290.7 0-89.4 89.4L210.8 400 256 445.3l22.6-22.6 144-144z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
+  padding: 14px 45px 30px 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.txtuppercase {
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
